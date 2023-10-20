@@ -6,14 +6,13 @@
 trigger:
 - master
 
-pool: 
- name: Ubuntu
+pool: Ubuntu
   
 
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'Pepsico-Backend/pom.xml'
+    mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
