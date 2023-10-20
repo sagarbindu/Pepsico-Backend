@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-name: Ubuntu
+ name: Ubuntu
   
 
 steps:
